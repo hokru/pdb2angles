@@ -1,0 +1,27 @@
+zap
+load nmrpdb hel_regions.pdb
+# load 1k_xray.pdb
+# restrict not (protein or water)
+
+select 1: 
+color red
+select 11: 
+color green
+select 2: 
+color red
+select 10: 
+color green
+select 4: 
+color red
+select 9: 
+color green
+select 5: 
+color red
+select 8: 
+color green
+select 6: 
+color red
+select 7: 
+color green
+
+select all

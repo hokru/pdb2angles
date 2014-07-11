@@ -1,0 +1,51 @@
+1k_xray.pdb  :  1  :     :     1  :     :  RG5   inc  __ 0.000
+1k_xray.pdb  :  1  :     :     2  :     :  RA    32 t !! 0.000
+1k_xray.pdb  :  1  :     :     3  :     :  RG    22 t 4s 0.515
+1k_xray.pdb  :  1  :     :     4  :     :  RU    23 p #a 0.939
+1k_xray.pdb  :  1  :     :     5  :     :  RA    33 p 1a 0.738
+1k_xray.pdb  :  1  :     :     6  :     :  RC3   33 p 1a 0.899
+1k_xray.pdb  :  1  :     :     7  :     :  RG5   inc  __ 0.000
+1k_xray.pdb  :  1  :     :     8  :     :  RG    33 p 1a 0.735
+1k_xray.pdb  :  1  :     :     9  :     :  RA    33 p !! 0.000 7D dist &a
+1k_xray.pdb  :  1  :     :    10  :     :  RA    33 p 1a 0.078
+1k_xray.pdb  :  1  :     :    11  :     :  RA3   33 p 1a 0.859
+ all general case widths, power = 3.00
+Found 9 complete suites derived from 11 entries
+0 suites were triaged, leaving 9 assigned to bins
+For all 9 suites: average suiteness== 0.529 (power==3.00)
+     2 suites are  outliers
+     0 suites have suiteness == 0    
+     1 suites have suiteness >  0 <.1
+     0 suites have suiteness >=.1 <.2
+     0 suites have suiteness >=.2 <.3
+     0 suites have suiteness >=.3 <.4
+     0 suites have suiteness >=.4 <.5
+     1 suites have suiteness >=.5 <.6
+     0 suites have suiteness >=.6 <.7
+     2 suites have suiteness >=.7 <.8
+     2 suites have suiteness >=.8 <.9
+     1 suites have suiteness >=.9    
+ A form (1a) 5 suites: average suiteness== 0.662 (power==3.00)
+     0 suites have suiteness == 0    
+     1 suites have suiteness >  0 <.1
+     0 suites have suiteness >=.1 <.2
+     0 suites have suiteness >=.2 <.3
+     0 suites have suiteness >=.3 <.4
+     0 suites have suiteness >=.4 <.5
+     0 suites have suiteness >=.5 <.6
+     0 suites have suiteness >=.6 <.7
+     2 suites have suiteness >=.7 <.8
+     2 suites have suiteness >=.8 <.9
+     0 suites have suiteness >=.9    
+ non-1a  has 2 suites: average suiteness== 0.727 (power==3.00)
+     0 suites have suiteness == 0    
+     0 suites have suiteness >  0 <.1
+     0 suites have suiteness >=.1 <.2
+     0 suites have suiteness >=.2 <.3
+     0 suites have suiteness >=.3 <.4
+     0 suites have suiteness >=.4 <.5
+     1 suites have suiteness >=.5 <.6
+     0 suites have suiteness >=.6 <.7
+     0 suites have suiteness >=.7 <.8
+     0 suites have suiteness >=.8 <.9
+     1 suites have suiteness >=.9    
