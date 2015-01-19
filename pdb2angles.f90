@@ -100,6 +100,7 @@ do
  endif
  if(index(atmp,'TER').ne.0) then
   strands(is)=resid(iat) !end of last strand
+ print*,strands(is)
  is=is+1
  endif
 enddo
@@ -167,15 +168,29 @@ do k=1,is ! loop over strands
 send=strands(k)
 do i=sstart,send ! loop over res in strands
 write(io,'(a,1x,I3,2x,a)')'# resid/name',i,resname(i)
-if(i.ne.sstart)write(io,'(a,4(I4),F5.2)') 'dihed ', o3p(i-1),phos(i),o5p(i),c5p(i),FK
-if(i.ne.sstart)write(io,'(a,4(I4),F5.2)') 'dihed ', phos(i),o5p(i),c5p(i),c4p(i),FK
+if(i.ne.sstart) then
+ write(io,*) '# alpha'
+ write(io,'(a,4(I4),F5.2)') 'dihed ', o3p(i-1),phos(i),o5p(i),c5p(i),FK
+endif
+if(i.ne.sstart) then
+ write(io,*) '# beta'
+ write(io,'(a,4(I4),F5.2)') 'dihed ', phos(i),o5p(i),c5p(i),c4p(i),FK
+endif
+ write(io,*) '# gamma'
 write(io,'(a,4(I4),F5.2)') 'dihed ', o5p(i),c5p(i),c4p(i),c3p(i),FK
+ write(io,*) '# delta'
 write(io,'(a,4(I4),F5.2)') 'dihed ', c5p(i),c4p(i),c3p(i),o3p(i),FK
-if(i.ne.send)write(io,'(a,4(I4),F5.2)') 'dihed ', c4p(i),c3p(i),o3p(i),phos(i+1),FK
-if(i.ne.send)write(io,'(a,4(I4),F5.2)') 'dihed ', c3p(i),o3p(i),phos(i+1),o5p(i+1),FK
+if(i.ne.send) then
+ write(io,*) '# eps'
+ write(io,'(a,4(I4),F5.2)') 'dihed ', c4p(i),c3p(i),o3p(i),phos(i+1),FK
+endif
+if(i.ne.send) then
+ write(io,*) '# zeta'
+ write(io,'(a,4(I4),F5.2)') 'dihed ', c3p(i),o3p(i),phos(i+1),o5p(i+1),FK
+endif
 write(io,*) '# chi'
-if(ctype(i)==0)write(io,'(a,4(I4),F5.2)') 'dihed ',o4p(i),c1p(i),n1(i),c2(i) !chi Y
-if(ctype(i)==1)write(io,'(a,4(I4),F5.2)') 'dihed ',o4p(i),c1p(i),n9(i),c4(i) !chi R
+if(ctype(i)==0)write(io,'(a,4(I4),F5.2)') 'dihed ',o4p(i),c1p(i),n1(i),c2(i),FK !chi Y
+if(ctype(i)==1)write(io,'(a,4(I4),F5.2)') 'dihed ',o4p(i),c1p(i),n9(i),c4(i),FK !chi R
 write(io,*)''
 enddo
 sstart=strands(k)+1
