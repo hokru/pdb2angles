@@ -106,6 +106,11 @@ do
 enddo
 666 close(io)
 
+if(is==1) then 
+ strands(is)=resid(iat) !end of last strand
+ is=is+1
+endif
+
 nat=iat
 mres=maxval(resid)
 write(*,*)''
