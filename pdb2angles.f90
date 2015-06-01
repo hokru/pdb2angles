@@ -136,10 +136,14 @@ do i=sstart,send ! loop over res in strands
 
 if(i.ne.sstart)    call dihed(xyz,o3p(i-1),phos(i),o5p(i),c5p(i),dih,alpha(i)) !alpha
 if(i.ne.sstart)    call dihed(xyz,phos(i),o5p(i),c5p(i),c4p(i),dih,beta(i)) !beta
+!    call dihed(xyz,o3p(i-1),phos(i),o5p(i),c5p(i),dih,alpha(i)) !alpha
+!    call dihed(xyz,phos(i),o5p(i),c5p(i),c4p(i),dih,beta(i)) !beta
               call dihed(xyz,o5p(i),c5p(i),c4p(i),c3p(i),dih,gama(i)) !gamma
               call dihed(xyz,c5p(i),c4p(i),c3p(i),o3p(i),dih,delta(i)) !delta
 if(i.ne.send) call dihed(xyz,c4p(i),c3p(i),o3p(i),phos(i+1),dih,eps(i)) !epsilon
 if(i.ne.send) call dihed(xyz,c3p(i),o3p(i),phos(i+1),o5p(i+1),dih,zeta(i)) !zeta
+! call dihed(xyz,c4p(i),c3p(i),o3p(i),phos(i+1),dih,eps(i)) !epsilon
+! call dihed(xyz,c3p(i),o3p(i),phos(i+1),o5p(i+1),dih,zeta(i)) !zeta
 
 
 if(ctype(i)==0) call dihed(xyz,o4p(i),c1p(i),n1(i),c2(i),dih,chi(i)) !chi Y
